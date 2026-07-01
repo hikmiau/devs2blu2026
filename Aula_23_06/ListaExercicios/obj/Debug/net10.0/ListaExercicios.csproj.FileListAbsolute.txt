@@ -1,0 +1,14 @@
+/Users/rannyer/RiderProjects/Projeto02/ListaExercicios/bin/Debug/net10.0/ListaExercicios
+/Users/rannyer/RiderProjects/Projeto02/ListaExercicios/bin/Debug/net10.0/ListaExercicios.deps.json
+/Users/rannyer/RiderProjects/Projeto02/ListaExercicios/bin/Debug/net10.0/ListaExercicios.runtimeconfig.json
+/Users/rannyer/RiderProjects/Projeto02/ListaExercicios/bin/Debug/net10.0/ListaExercicios.dll
+/Users/rannyer/RiderProjects/Projeto02/ListaExercicios/bin/Debug/net10.0/ListaExercicios.pdb
+/Users/rannyer/RiderProjects/Projeto02/ListaExercicios/obj/Debug/net10.0/ListaExercicios.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rannyer/RiderProjects/Projeto02/ListaExercicios/obj/Debug/net10.0/ListaExercicios.AssemblyInfoInputs.cache
+/Users/rannyer/RiderProjects/Projeto02/ListaExercicios/obj/Debug/net10.0/ListaExercicios.AssemblyInfo.cs
+/Users/rannyer/RiderProjects/Projeto02/ListaExercicios/obj/Debug/net10.0/ListaExercicios.csproj.CoreCompileInputs.cache
+/Users/rannyer/RiderProjects/Projeto02/ListaExercicios/obj/Debug/net10.0/ListaExercicios.dll
+/Users/rannyer/RiderProjects/Projeto02/ListaExercicios/obj/Debug/net10.0/refint/ListaExercicios.dll
+/Users/rannyer/RiderProjects/Projeto02/ListaExercicios/obj/Debug/net10.0/ListaExercicios.pdb
+/Users/rannyer/RiderProjects/Projeto02/ListaExercicios/obj/Debug/net10.0/ListaExercicios.genruntimeconfig.cache
+/Users/rannyer/RiderProjects/Projeto02/ListaExercicios/obj/Debug/net10.0/ref/ListaExercicios.dll

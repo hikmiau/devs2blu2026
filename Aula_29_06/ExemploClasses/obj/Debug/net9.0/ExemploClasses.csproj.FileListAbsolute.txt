@@ -1,0 +1,15 @@
+C:\Users\moc\RiderProjects\devs2blu2026\ExerciciosIfElse\ExemploClasses\bin\Debug\net9.0\ExemploClasses.exe
+C:\Users\moc\RiderProjects\devs2blu2026\ExerciciosIfElse\ExemploClasses\bin\Debug\net9.0\ExemploClasses.deps.json
+C:\Users\moc\RiderProjects\devs2blu2026\ExerciciosIfElse\ExemploClasses\bin\Debug\net9.0\ExemploClasses.runtimeconfig.json
+C:\Users\moc\RiderProjects\devs2blu2026\ExerciciosIfElse\ExemploClasses\bin\Debug\net9.0\ExemploClasses.dll
+C:\Users\moc\RiderProjects\devs2blu2026\ExerciciosIfElse\ExemploClasses\bin\Debug\net9.0\ExemploClasses.pdb
+C:\Users\moc\RiderProjects\devs2blu2026\ExerciciosIfElse\ExemploClasses\obj\Debug\net9.0\ExemploClasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moc\RiderProjects\devs2blu2026\ExerciciosIfElse\ExemploClasses\obj\Debug\net9.0\ExemploClasses.AssemblyInfoInputs.cache
+C:\Users\moc\RiderProjects\devs2blu2026\ExerciciosIfElse\ExemploClasses\obj\Debug\net9.0\ExemploClasses.AssemblyInfo.cs
+C:\Users\moc\RiderProjects\devs2blu2026\ExerciciosIfElse\ExemploClasses\obj\Debug\net9.0\ExemploClasses.csproj.CoreCompileInputs.cache
+C:\Users\moc\RiderProjects\devs2blu2026\ExerciciosIfElse\ExemploClasses\obj\Debug\net9.0\ExemploClasses.sourcelink.json
+C:\Users\moc\RiderProjects\devs2blu2026\ExerciciosIfElse\ExemploClasses\obj\Debug\net9.0\ExemploClasses.dll
+C:\Users\moc\RiderProjects\devs2blu2026\ExerciciosIfElse\ExemploClasses\obj\Debug\net9.0\refint\ExemploClasses.dll
+C:\Users\moc\RiderProjects\devs2blu2026\ExerciciosIfElse\ExemploClasses\obj\Debug\net9.0\ExemploClasses.pdb
+C:\Users\moc\RiderProjects\devs2blu2026\ExerciciosIfElse\ExemploClasses\obj\Debug\net9.0\ExemploClasses.genruntimeconfig.cache
+C:\Users\moc\RiderProjects\devs2blu2026\ExerciciosIfElse\ExemploClasses\obj\Debug\net9.0\ref\ExemploClasses.dll

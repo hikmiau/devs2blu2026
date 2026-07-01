@@ -1,0 +1,14 @@
+/Users/rannyer/RiderProjects/Projeto02/ExemploLista02/bin/Debug/net10.0/ExemploLista02
+/Users/rannyer/RiderProjects/Projeto02/ExemploLista02/bin/Debug/net10.0/ExemploLista02.deps.json
+/Users/rannyer/RiderProjects/Projeto02/ExemploLista02/bin/Debug/net10.0/ExemploLista02.runtimeconfig.json
+/Users/rannyer/RiderProjects/Projeto02/ExemploLista02/bin/Debug/net10.0/ExemploLista02.dll
+/Users/rannyer/RiderProjects/Projeto02/ExemploLista02/bin/Debug/net10.0/ExemploLista02.pdb
+/Users/rannyer/RiderProjects/Projeto02/ExemploLista02/obj/Debug/net10.0/ExemploLista02.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rannyer/RiderProjects/Projeto02/ExemploLista02/obj/Debug/net10.0/ExemploLista02.AssemblyInfoInputs.cache
+/Users/rannyer/RiderProjects/Projeto02/ExemploLista02/obj/Debug/net10.0/ExemploLista02.AssemblyInfo.cs
+/Users/rannyer/RiderProjects/Projeto02/ExemploLista02/obj/Debug/net10.0/ExemploLista02.csproj.CoreCompileInputs.cache
+/Users/rannyer/RiderProjects/Projeto02/ExemploLista02/obj/Debug/net10.0/ExemploLista02.dll
+/Users/rannyer/RiderProjects/Projeto02/ExemploLista02/obj/Debug/net10.0/refint/ExemploLista02.dll
+/Users/rannyer/RiderProjects/Projeto02/ExemploLista02/obj/Debug/net10.0/ExemploLista02.pdb
+/Users/rannyer/RiderProjects/Projeto02/ExemploLista02/obj/Debug/net10.0/ExemploLista02.genruntimeconfig.cache
+/Users/rannyer/RiderProjects/Projeto02/ExemploLista02/obj/Debug/net10.0/ref/ExemploLista02.dll

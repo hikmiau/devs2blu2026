@@ -1,0 +1,14 @@
+C:\Users\moc\RiderProjects\Notasteste\Notasteste\bin\Debug\net10.0\Notasteste.exe
+C:\Users\moc\RiderProjects\Notasteste\Notasteste\bin\Debug\net10.0\Notasteste.deps.json
+C:\Users\moc\RiderProjects\Notasteste\Notasteste\bin\Debug\net10.0\Notasteste.runtimeconfig.json
+C:\Users\moc\RiderProjects\Notasteste\Notasteste\bin\Debug\net10.0\Notasteste.dll
+C:\Users\moc\RiderProjects\Notasteste\Notasteste\bin\Debug\net10.0\Notasteste.pdb
+C:\Users\moc\RiderProjects\Notasteste\Notasteste\obj\Debug\net10.0\Notasteste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moc\RiderProjects\Notasteste\Notasteste\obj\Debug\net10.0\Notasteste.AssemblyInfoInputs.cache
+C:\Users\moc\RiderProjects\Notasteste\Notasteste\obj\Debug\net10.0\Notasteste.AssemblyInfo.cs
+C:\Users\moc\RiderProjects\Notasteste\Notasteste\obj\Debug\net10.0\Notasteste.csproj.CoreCompileInputs.cache
+C:\Users\moc\RiderProjects\Notasteste\Notasteste\obj\Debug\net10.0\Notasteste.dll
+C:\Users\moc\RiderProjects\Notasteste\Notasteste\obj\Debug\net10.0\refint\Notasteste.dll
+C:\Users\moc\RiderProjects\Notasteste\Notasteste\obj\Debug\net10.0\Notasteste.pdb
+C:\Users\moc\RiderProjects\Notasteste\Notasteste\obj\Debug\net10.0\Notasteste.genruntimeconfig.cache
+C:\Users\moc\RiderProjects\Notasteste\Notasteste\obj\Debug\net10.0\ref\Notasteste.dll

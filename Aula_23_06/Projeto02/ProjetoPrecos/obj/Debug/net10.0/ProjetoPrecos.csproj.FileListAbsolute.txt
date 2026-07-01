@@ -1,0 +1,14 @@
+C:\Users\moc\RiderProjects\Projeto02\ProjetoPrecos\obj\Debug\net10.0\ProjetoPrecos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moc\RiderProjects\Projeto02\ProjetoPrecos\obj\Debug\net10.0\ProjetoPrecos.AssemblyInfoInputs.cache
+C:\Users\moc\RiderProjects\Projeto02\ProjetoPrecos\obj\Debug\net10.0\ProjetoPrecos.AssemblyInfo.cs
+C:\Users\moc\RiderProjects\Projeto02\ProjetoPrecos\obj\Debug\net10.0\ProjetoPrecos.csproj.CoreCompileInputs.cache
+C:\Users\moc\RiderProjects\Projeto02\ProjetoPrecos\bin\Debug\net10.0\ProjetoPrecos.exe
+C:\Users\moc\RiderProjects\Projeto02\ProjetoPrecos\bin\Debug\net10.0\ProjetoPrecos.deps.json
+C:\Users\moc\RiderProjects\Projeto02\ProjetoPrecos\bin\Debug\net10.0\ProjetoPrecos.runtimeconfig.json
+C:\Users\moc\RiderProjects\Projeto02\ProjetoPrecos\bin\Debug\net10.0\ProjetoPrecos.dll
+C:\Users\moc\RiderProjects\Projeto02\ProjetoPrecos\bin\Debug\net10.0\ProjetoPrecos.pdb
+C:\Users\moc\RiderProjects\Projeto02\ProjetoPrecos\obj\Debug\net10.0\ProjetoPrecos.dll
+C:\Users\moc\RiderProjects\Projeto02\ProjetoPrecos\obj\Debug\net10.0\refint\ProjetoPrecos.dll
+C:\Users\moc\RiderProjects\Projeto02\ProjetoPrecos\obj\Debug\net10.0\ProjetoPrecos.pdb
+C:\Users\moc\RiderProjects\Projeto02\ProjetoPrecos\obj\Debug\net10.0\ProjetoPrecos.genruntimeconfig.cache
+C:\Users\moc\RiderProjects\Projeto02\ProjetoPrecos\obj\Debug\net10.0\ref\ProjetoPrecos.dll

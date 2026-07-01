@@ -1,0 +1,14 @@
+C:\Users\moc\RiderProjects\Projeto02\Exemplo02\bin\Debug\net10.0\Exemplo02.exe
+C:\Users\moc\RiderProjects\Projeto02\Exemplo02\bin\Debug\net10.0\Exemplo02.deps.json
+C:\Users\moc\RiderProjects\Projeto02\Exemplo02\bin\Debug\net10.0\Exemplo02.runtimeconfig.json
+C:\Users\moc\RiderProjects\Projeto02\Exemplo02\bin\Debug\net10.0\Exemplo02.dll
+C:\Users\moc\RiderProjects\Projeto02\Exemplo02\bin\Debug\net10.0\Exemplo02.pdb
+C:\Users\moc\RiderProjects\Projeto02\Exemplo02\obj\Debug\net10.0\Exemplo02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moc\RiderProjects\Projeto02\Exemplo02\obj\Debug\net10.0\Exemplo02.AssemblyInfoInputs.cache
+C:\Users\moc\RiderProjects\Projeto02\Exemplo02\obj\Debug\net10.0\Exemplo02.AssemblyInfo.cs
+C:\Users\moc\RiderProjects\Projeto02\Exemplo02\obj\Debug\net10.0\Exemplo02.csproj.CoreCompileInputs.cache
+C:\Users\moc\RiderProjects\Projeto02\Exemplo02\obj\Debug\net10.0\Exemplo02.dll
+C:\Users\moc\RiderProjects\Projeto02\Exemplo02\obj\Debug\net10.0\refint\Exemplo02.dll
+C:\Users\moc\RiderProjects\Projeto02\Exemplo02\obj\Debug\net10.0\Exemplo02.pdb
+C:\Users\moc\RiderProjects\Projeto02\Exemplo02\obj\Debug\net10.0\Exemplo02.genruntimeconfig.cache
+C:\Users\moc\RiderProjects\Projeto02\Exemplo02\obj\Debug\net10.0\ref\Exemplo02.dll

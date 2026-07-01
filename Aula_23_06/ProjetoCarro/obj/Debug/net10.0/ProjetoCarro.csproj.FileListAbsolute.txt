@@ -1,0 +1,15 @@
+/Users/rannyer/RiderProjects/Projeto02/ProjetoCarro/bin/Debug/net10.0/ProjetoCarro
+/Users/rannyer/RiderProjects/Projeto02/ProjetoCarro/bin/Debug/net10.0/ProjetoCarro.deps.json
+/Users/rannyer/RiderProjects/Projeto02/ProjetoCarro/bin/Debug/net10.0/ProjetoCarro.runtimeconfig.json
+/Users/rannyer/RiderProjects/Projeto02/ProjetoCarro/bin/Debug/net10.0/ProjetoCarro.dll
+/Users/rannyer/RiderProjects/Projeto02/ProjetoCarro/bin/Debug/net10.0/ProjetoCarro.pdb
+/Users/rannyer/RiderProjects/Projeto02/ProjetoCarro/obj/Debug/net10.0/ProjetoCarro.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rannyer/RiderProjects/Projeto02/ProjetoCarro/obj/Debug/net10.0/ProjetoCarro.AssemblyInfoInputs.cache
+/Users/rannyer/RiderProjects/Projeto02/ProjetoCarro/obj/Debug/net10.0/ProjetoCarro.AssemblyInfo.cs
+/Users/rannyer/RiderProjects/Projeto02/ProjetoCarro/obj/Debug/net10.0/ProjetoCarro.csproj.CoreCompileInputs.cache
+/Users/rannyer/RiderProjects/Projeto02/ProjetoCarro/obj/Debug/net10.0/ProjetoCarro.dll
+/Users/rannyer/RiderProjects/Projeto02/ProjetoCarro/obj/Debug/net10.0/refint/ProjetoCarro.dll
+/Users/rannyer/RiderProjects/Projeto02/ProjetoCarro/obj/Debug/net10.0/ProjetoCarro.pdb
+/Users/rannyer/RiderProjects/Projeto02/ProjetoCarro/obj/Debug/net10.0/ProjetoCarro.genruntimeconfig.cache
+/Users/rannyer/RiderProjects/Projeto02/ProjetoCarro/obj/Debug/net10.0/ref/ProjetoCarro.dll
+/Users/rannyer/RiderProjects/Projeto02/ProjetoCarro/obj/Debug/net10.0/ProjetoCarro.sourcelink.json

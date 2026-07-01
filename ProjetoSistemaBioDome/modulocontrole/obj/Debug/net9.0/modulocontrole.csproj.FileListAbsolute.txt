@@ -1,0 +1,14 @@
+Z:\biopasta\projetobio\modulocontrole\bin\Debug\net9.0\modulocontrole.exe
+Z:\biopasta\projetobio\modulocontrole\bin\Debug\net9.0\modulocontrole.deps.json
+Z:\biopasta\projetobio\modulocontrole\bin\Debug\net9.0\modulocontrole.runtimeconfig.json
+Z:\biopasta\projetobio\modulocontrole\bin\Debug\net9.0\modulocontrole.dll
+Z:\biopasta\projetobio\modulocontrole\bin\Debug\net9.0\modulocontrole.pdb
+Z:\biopasta\projetobio\modulocontrole\obj\Debug\net9.0\modulocontrole.GeneratedMSBuildEditorConfig.editorconfig
+Z:\biopasta\projetobio\modulocontrole\obj\Debug\net9.0\modulocontrole.AssemblyInfoInputs.cache
+Z:\biopasta\projetobio\modulocontrole\obj\Debug\net9.0\modulocontrole.AssemblyInfo.cs
+Z:\biopasta\projetobio\modulocontrole\obj\Debug\net9.0\modulocontrole.csproj.CoreCompileInputs.cache
+Z:\biopasta\projetobio\modulocontrole\obj\Debug\net9.0\modulocontrole.dll
+Z:\biopasta\projetobio\modulocontrole\obj\Debug\net9.0\refint\modulocontrole.dll
+Z:\biopasta\projetobio\modulocontrole\obj\Debug\net9.0\modulocontrole.pdb
+Z:\biopasta\projetobio\modulocontrole\obj\Debug\net9.0\modulocontrole.genruntimeconfig.cache
+Z:\biopasta\projetobio\modulocontrole\obj\Debug\net9.0\ref\modulocontrole.dll

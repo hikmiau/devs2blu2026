@@ -1,0 +1,14 @@
+/Users/rannyer/RiderProjects/Projeto02/Projeto02/obj/Debug/net10.0/Projeto02.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rannyer/RiderProjects/Projeto02/Projeto02/obj/Debug/net10.0/Projeto02.AssemblyInfoInputs.cache
+/Users/rannyer/RiderProjects/Projeto02/Projeto02/obj/Debug/net10.0/Projeto02.AssemblyInfo.cs
+/Users/rannyer/RiderProjects/Projeto02/Projeto02/obj/Debug/net10.0/Projeto02.csproj.CoreCompileInputs.cache
+/Users/rannyer/RiderProjects/Projeto02/Projeto02/bin/Debug/net10.0/Projeto02
+/Users/rannyer/RiderProjects/Projeto02/Projeto02/bin/Debug/net10.0/Projeto02.deps.json
+/Users/rannyer/RiderProjects/Projeto02/Projeto02/bin/Debug/net10.0/Projeto02.runtimeconfig.json
+/Users/rannyer/RiderProjects/Projeto02/Projeto02/bin/Debug/net10.0/Projeto02.dll
+/Users/rannyer/RiderProjects/Projeto02/Projeto02/bin/Debug/net10.0/Projeto02.pdb
+/Users/rannyer/RiderProjects/Projeto02/Projeto02/obj/Debug/net10.0/Projeto02.dll
+/Users/rannyer/RiderProjects/Projeto02/Projeto02/obj/Debug/net10.0/refint/Projeto02.dll
+/Users/rannyer/RiderProjects/Projeto02/Projeto02/obj/Debug/net10.0/Projeto02.pdb
+/Users/rannyer/RiderProjects/Projeto02/Projeto02/obj/Debug/net10.0/Projeto02.genruntimeconfig.cache
+/Users/rannyer/RiderProjects/Projeto02/Projeto02/obj/Debug/net10.0/ref/Projeto02.dll
