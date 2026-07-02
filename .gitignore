@@ -1,3 +1,17 @@
 
 # SSH public keys
 ProjetoSistemaBioDome/**/*.pub
+**/*.pub
+**/id_rsa
+**/id_rsa.*
+**/id_dsa
+**/id_dsa.*
+**/id_ecdsa
+**/id_ecdsa.*
+**/id_ed25519
+**/id_ed25519.*
+**/*.pem
+**/*.ppk
+**/*.key
+**/authorized_keys
+**/known_hosts
