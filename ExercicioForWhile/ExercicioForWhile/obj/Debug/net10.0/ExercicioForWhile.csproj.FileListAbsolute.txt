@@ -1,0 +1,14 @@
+C:\Users\moc\RiderProjects\ExercicioForWhile\ExercicioForWhile\bin\Debug\net10.0\ExercicioForWhile.exe
+C:\Users\moc\RiderProjects\ExercicioForWhile\ExercicioForWhile\bin\Debug\net10.0\ExercicioForWhile.deps.json
+C:\Users\moc\RiderProjects\ExercicioForWhile\ExercicioForWhile\bin\Debug\net10.0\ExercicioForWhile.runtimeconfig.json
+C:\Users\moc\RiderProjects\ExercicioForWhile\ExercicioForWhile\bin\Debug\net10.0\ExercicioForWhile.dll
+C:\Users\moc\RiderProjects\ExercicioForWhile\ExercicioForWhile\bin\Debug\net10.0\ExercicioForWhile.pdb
+C:\Users\moc\RiderProjects\ExercicioForWhile\ExercicioForWhile\obj\Debug\net10.0\ExercicioForWhile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moc\RiderProjects\ExercicioForWhile\ExercicioForWhile\obj\Debug\net10.0\ExercicioForWhile.AssemblyInfoInputs.cache
+C:\Users\moc\RiderProjects\ExercicioForWhile\ExercicioForWhile\obj\Debug\net10.0\ExercicioForWhile.AssemblyInfo.cs
+C:\Users\moc\RiderProjects\ExercicioForWhile\ExercicioForWhile\obj\Debug\net10.0\ExercicioForWhile.csproj.CoreCompileInputs.cache
+C:\Users\moc\RiderProjects\ExercicioForWhile\ExercicioForWhile\obj\Debug\net10.0\ExercicioForWhile.dll
+C:\Users\moc\RiderProjects\ExercicioForWhile\ExercicioForWhile\obj\Debug\net10.0\refint\ExercicioForWhile.dll
+C:\Users\moc\RiderProjects\ExercicioForWhile\ExercicioForWhile\obj\Debug\net10.0\ExercicioForWhile.pdb
+C:\Users\moc\RiderProjects\ExercicioForWhile\ExercicioForWhile\obj\Debug\net10.0\ExercicioForWhile.genruntimeconfig.cache
+C:\Users\moc\RiderProjects\ExercicioForWhile\ExercicioForWhile\obj\Debug\net10.0\ref\ExercicioForWhile.dll

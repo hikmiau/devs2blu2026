@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "Z:\\biopasta\\projetobio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{44E1D858-6C0E-4F84-B568-A6A4BFA76B40}|modulocontrole\\modulocontrole.csproj|z:\\biopasta\\projetobio\\modulocontrole\\modulocontrole.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{44E1D858-6C0E-4F84-B568-A6A4BFA76B40}|modulocontrole\\modulocontrole.csproj|solutionrelative:modulocontrole\\modulocontrole.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44E1D858-6C0E-4F84-B568-A6A4BFA76B40}|modulocontrole\\modulocontrole.csproj|z:\\biopasta\\projetobio\\modulocontrole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44E1D858-6C0E-4F84-B568-A6A4BFA76B40}|modulocontrole\\modulocontrole.csproj|solutionrelative:modulocontrole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "modulocontrole",
+              "DocumentMoniker": "Z:\\biopasta\\projetobio\\modulocontrole\\modulocontrole.csproj",
+              "RelativeDocumentMoniker": "modulocontrole\\modulocontrole.csproj",
+              "ToolTip": "Z:\\biopasta\\projetobio\\modulocontrole\\modulocontrole.csproj",
+              "RelativeToolTip": "modulocontrole\\modulocontrole.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-01T21:20:15.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "Z:\\biopasta\\projetobio\\modulocontrole\\Program.cs",
+              "RelativeDocumentMoniker": "modulocontrole\\Program.cs",
+              "ToolTip": "Z:\\biopasta\\projetobio\\modulocontrole\\Program.cs",
+              "RelativeToolTip": "modulocontrole\\Program.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAAAqwCIBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T00:14:30.574Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

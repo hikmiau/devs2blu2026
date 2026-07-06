@@ -1,0 +1,23 @@
+# SSH keys and related artifacts
+id_rsa
+id_rsa.pub
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+*.p8
+*.asc
+*.der
+*.csr
+*.ssh
+.ssh/
+ssh/
+**/ssh/
+**/*ssh*
+known_hosts
+authorized_keys
+authorized_keys2
+config
+C:\Users\henrique_fagundes.EDU_FIESC\Downloads\devs2blu2026\ProjetoSistemaBioDome

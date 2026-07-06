@@ -1,0 +1,14 @@
+C:\Users\moc\RiderProjects\Projeto02\ProjetoCarro\bin\Debug\net10.0\ProjetoCarro.exe
+C:\Users\moc\RiderProjects\Projeto02\ProjetoCarro\bin\Debug\net10.0\ProjetoCarro.deps.json
+C:\Users\moc\RiderProjects\Projeto02\ProjetoCarro\bin\Debug\net10.0\ProjetoCarro.runtimeconfig.json
+C:\Users\moc\RiderProjects\Projeto02\ProjetoCarro\bin\Debug\net10.0\ProjetoCarro.dll
+C:\Users\moc\RiderProjects\Projeto02\ProjetoCarro\bin\Debug\net10.0\ProjetoCarro.pdb
+C:\Users\moc\RiderProjects\Projeto02\ProjetoCarro\obj\Debug\net10.0\ProjetoCarro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moc\RiderProjects\Projeto02\ProjetoCarro\obj\Debug\net10.0\ProjetoCarro.AssemblyInfoInputs.cache
+C:\Users\moc\RiderProjects\Projeto02\ProjetoCarro\obj\Debug\net10.0\ProjetoCarro.AssemblyInfo.cs
+C:\Users\moc\RiderProjects\Projeto02\ProjetoCarro\obj\Debug\net10.0\ProjetoCarro.csproj.CoreCompileInputs.cache
+C:\Users\moc\RiderProjects\Projeto02\ProjetoCarro\obj\Debug\net10.0\ProjetoCarro.dll
+C:\Users\moc\RiderProjects\Projeto02\ProjetoCarro\obj\Debug\net10.0\refint\ProjetoCarro.dll
+C:\Users\moc\RiderProjects\Projeto02\ProjetoCarro\obj\Debug\net10.0\ProjetoCarro.pdb
+C:\Users\moc\RiderProjects\Projeto02\ProjetoCarro\obj\Debug\net10.0\ProjetoCarro.genruntimeconfig.cache
+C:\Users\moc\RiderProjects\Projeto02\ProjetoCarro\obj\Debug\net10.0\ref\ProjetoCarro.dll

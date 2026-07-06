@@ -1,0 +1,14 @@
+/Users/rannyer/RiderProjects/Projeto02/CadastroNotas/bin/Debug/net10.0/CadastroNotas
+/Users/rannyer/RiderProjects/Projeto02/CadastroNotas/bin/Debug/net10.0/CadastroNotas.deps.json
+/Users/rannyer/RiderProjects/Projeto02/CadastroNotas/bin/Debug/net10.0/CadastroNotas.runtimeconfig.json
+/Users/rannyer/RiderProjects/Projeto02/CadastroNotas/bin/Debug/net10.0/CadastroNotas.dll
+/Users/rannyer/RiderProjects/Projeto02/CadastroNotas/bin/Debug/net10.0/CadastroNotas.pdb
+/Users/rannyer/RiderProjects/Projeto02/CadastroNotas/obj/Debug/net10.0/CadastroNotas.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rannyer/RiderProjects/Projeto02/CadastroNotas/obj/Debug/net10.0/CadastroNotas.AssemblyInfoInputs.cache
+/Users/rannyer/RiderProjects/Projeto02/CadastroNotas/obj/Debug/net10.0/CadastroNotas.AssemblyInfo.cs
+/Users/rannyer/RiderProjects/Projeto02/CadastroNotas/obj/Debug/net10.0/CadastroNotas.csproj.CoreCompileInputs.cache
+/Users/rannyer/RiderProjects/Projeto02/CadastroNotas/obj/Debug/net10.0/CadastroNotas.dll
+/Users/rannyer/RiderProjects/Projeto02/CadastroNotas/obj/Debug/net10.0/refint/CadastroNotas.dll
+/Users/rannyer/RiderProjects/Projeto02/CadastroNotas/obj/Debug/net10.0/CadastroNotas.pdb
+/Users/rannyer/RiderProjects/Projeto02/CadastroNotas/obj/Debug/net10.0/CadastroNotas.genruntimeconfig.cache
+/Users/rannyer/RiderProjects/Projeto02/CadastroNotas/obj/Debug/net10.0/ref/CadastroNotas.dll

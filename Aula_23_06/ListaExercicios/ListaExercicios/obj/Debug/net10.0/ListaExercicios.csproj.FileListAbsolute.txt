@@ -1,0 +1,14 @@
+C:\Users\moc\RiderProjects\ListaExercicios\ListaExercicios\bin\Debug\net10.0\ListaExercicios.exe
+C:\Users\moc\RiderProjects\ListaExercicios\ListaExercicios\bin\Debug\net10.0\ListaExercicios.deps.json
+C:\Users\moc\RiderProjects\ListaExercicios\ListaExercicios\bin\Debug\net10.0\ListaExercicios.runtimeconfig.json
+C:\Users\moc\RiderProjects\ListaExercicios\ListaExercicios\bin\Debug\net10.0\ListaExercicios.dll
+C:\Users\moc\RiderProjects\ListaExercicios\ListaExercicios\bin\Debug\net10.0\ListaExercicios.pdb
+C:\Users\moc\RiderProjects\ListaExercicios\ListaExercicios\obj\Debug\net10.0\ListaExercicios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moc\RiderProjects\ListaExercicios\ListaExercicios\obj\Debug\net10.0\ListaExercicios.AssemblyInfoInputs.cache
+C:\Users\moc\RiderProjects\ListaExercicios\ListaExercicios\obj\Debug\net10.0\ListaExercicios.AssemblyInfo.cs
+C:\Users\moc\RiderProjects\ListaExercicios\ListaExercicios\obj\Debug\net10.0\ListaExercicios.csproj.CoreCompileInputs.cache
+C:\Users\moc\RiderProjects\ListaExercicios\ListaExercicios\obj\Debug\net10.0\ListaExercicios.dll
+C:\Users\moc\RiderProjects\ListaExercicios\ListaExercicios\obj\Debug\net10.0\refint\ListaExercicios.dll
+C:\Users\moc\RiderProjects\ListaExercicios\ListaExercicios\obj\Debug\net10.0\ListaExercicios.pdb
+C:\Users\moc\RiderProjects\ListaExercicios\ListaExercicios\obj\Debug\net10.0\ListaExercicios.genruntimeconfig.cache
+C:\Users\moc\RiderProjects\ListaExercicios\ListaExercicios\obj\Debug\net10.0\ref\ListaExercicios.dll
