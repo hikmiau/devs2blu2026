@@ -44,10 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bola.cs" />
+    <Compile Include="Exercicios\Carro.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Exercicios\Aluno.cs" />
+    <Compile Include="Exercicios\ContaBancaria.cs" />
+    <Compile Include="Exercicios\ExercicioPedido\Produto1.cs" />
+    <Compile Include="Exercicios\Funcionario.cs" />
+    <Compile Include="Exercicios\Livro.cs" />
+    <Compile Include="Exercicios\ExercicioPedido\Pedido.cs" />
     <Compile Include="Exercicios\PersonagemDeJogo.cs" />
     <Compile Include="Exercicios\Produto.cs" />
+    <Compile Include="Exercicios\PetVirtual.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -10,9 +10,9 @@ namespace MeuPoo01.Exercicios
     {
         public int Id;
         public string Nome;
-        public int Quantidade;
+        public double Quantidade;
 
-        public Produto(int id, string nome, int quantidade)
+        public Produto(int id, string nome, double quantidade)
         {
             this.Id = id;
             this.Nome = nome;
