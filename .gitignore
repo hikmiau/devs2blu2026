@@ -15,3 +15,13 @@ ProjetoSistemaBioDome/**/*.pub
 **/*.key
 **/authorized_keys
 **/known_hosts
+
+# Visual Studio / Rider cache & settings
+.vs/
+.idea/
+*.user
+*.suo
+
+# Build outputs
+[Bb]in/
+[Oo]bj/
