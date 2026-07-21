@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\moc\RiderProjects\devs2blu2026\MeuPoo01\MeuPoo01\bin\Debug\MeuPoo01.exe.config
 C:\Users\moc\RiderProjects\devs2blu2026\MeuPoo01\MeuPoo01\bin\Debug\MeuPoo01.exe
 C:\Users\moc\RiderProjects\devs2blu2026\MeuPoo01\MeuPoo01\bin\Debug\MeuPoo01.pdb
@@ -5,3 +6,12 @@ C:\Users\moc\RiderProjects\devs2blu2026\MeuPoo01\MeuPoo01\obj\Debug\MeuPoo01.csp
 C:\Users\moc\RiderProjects\devs2blu2026\MeuPoo01\MeuPoo01\obj\Debug\MeuPoo01.csproj.CoreCompileInputs.cache
 C:\Users\moc\RiderProjects\devs2blu2026\MeuPoo01\MeuPoo01\obj\Debug\MeuPoo01.exe
 C:\Users\moc\RiderProjects\devs2blu2026\MeuPoo01\MeuPoo01\obj\Debug\MeuPoo01.pdb
+=======
+C:\Users\moc\RiderProjects\devs2blu2026\MeuPoo01\MeuPoo01\bin\Debug\MeuPoo01.exe.config
+C:\Users\moc\RiderProjects\devs2blu2026\MeuPoo01\MeuPoo01\bin\Debug\MeuPoo01.exe
+C:\Users\moc\RiderProjects\devs2blu2026\MeuPoo01\MeuPoo01\bin\Debug\MeuPoo01.pdb
+C:\Users\moc\RiderProjects\devs2blu2026\MeuPoo01\MeuPoo01\obj\Debug\MeuPoo01.csproj.AssemblyReference.cache
+C:\Users\moc\RiderProjects\devs2blu2026\MeuPoo01\MeuPoo01\obj\Debug\MeuPoo01.csproj.CoreCompileInputs.cache
+C:\Users\moc\RiderProjects\devs2blu2026\MeuPoo01\MeuPoo01\obj\Debug\MeuPoo01.exe
+C:\Users\moc\RiderProjects\devs2blu2026\MeuPoo01\MeuPoo01\obj\Debug\MeuPoo01.pdb
+>>>>>>> ce3bbc3903b9bd764a9004d751b7c0f7f6757645
