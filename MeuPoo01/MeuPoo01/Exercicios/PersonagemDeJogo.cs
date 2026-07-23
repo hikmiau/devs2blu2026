@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -94,8 +93,9 @@ namespace MeuPoo01.Exercicios
     //         Console.WriteLine("Vida: " + vida);
     //     }
     // }
-    internal class PersonagemJogo
-    {
+    /*
+     * internal class PersonagemJogo
+    * {
         public string Nome;
         public string Classe;
         public int Vida;
@@ -126,16 +126,9 @@ namespace MeuPoo01.Exercicios
             Console.WriteLine("Forca: " + this.Forca);
         }
     }
+    */
 }
-=======
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MeuPoo01.Exercicios
-{
     internal class PersonagemDeJogo
     {
         public string Id;
@@ -209,4 +202,3 @@ namespace MeuPoo01.Exercicios
         }
     }
 }
->>>>>>> ce3bbc3903b9bd764a9004d751b7c0f7f6757645

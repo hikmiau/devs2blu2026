@@ -9,9 +9,9 @@ namespace AulaPOO.Exercicios.ExercicioPedido
 {
     internal class Pedido
     {
-        public int numero;
+        private int numero;
         public string cliente;
-        public string status;
+        private string status;
         public List<Produto1> itens;
 
         public Pedido(int numero, string cliente, string status)
@@ -37,6 +37,26 @@ namespace AulaPOO.Exercicios.ExercicioPedido
                 soma += itens[i].preco;
             }
             Console.WriteLine($"Total: R${soma}");
+        }
+        public string getStatus()
+        {
+            return status;
+        }
+        public void setStatus(string novoStatus)
+        {
+            status = novoStatus;
+        }
+        public void verStatus()
+        {
+            Console.WriteLine(status);
+        }
+        public void definirStatus(string novoStatus)
+        {
+            this.status = novoStatus;
+        }
+        public int getNumero()
+        {
+            return numero;
         }
     }
 }
