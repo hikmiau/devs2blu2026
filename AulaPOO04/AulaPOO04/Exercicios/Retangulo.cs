@@ -12,19 +12,16 @@ namespace AulaPOO04.Exercicios
 
         public double Altura { get; private set; }
 
+        public double Area => Altura * Largura;
+
         public Retangulo(double largura, double altura)
         {
             if (largura <= 0 || altura <= 0)
-            {
-                throw new ArgumentException("Os valores das medidas nao podem ser negativos ou 0");
-            }
-            this.Largura = largura;
-            this.Altura = altura;
-        }
-
-        public double Area()
-        {
-            return Altura * Largura;
+                throw new ArgumentException("Os valores das medidas nao podem ser negativos ou 0.");
+            if (largura == altura)
+                throw new ArgumentException("Medidas invalidas.");
+            Largura = largura;
+            Altura = altura;
         }
     }
 }

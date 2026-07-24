@@ -63,16 +63,55 @@ namespace AulaPOO04
 
         private static void Ex02()
         {
-            try
+            while (true)
             {
-                double l = double.Parse(Console.ReadLine());
-                double a = double.Parse(Console.ReadLine());
-                Retangulo rt = new Retangulo(a, l);
+                try
+                {
+                    Console.WriteLine("Altura: ");
+                    double altura = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Largura: ");
+                    double largura = double.Parse(Console.ReadLine());
+
+                    Retangulo rt = new Retangulo(largura, altura);
+                    Console.WriteLine("Retangulo criado com sucesso!");
+                    Console.WriteLine("Area: " + rt.Area);
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                catch (FormatException ex)
+                {
+                    Console.WriteLine("Digite um **NUMERO**!");
+                }
             }
-            catch (Exception ex)
+        }
+
+        private static void Ex03()
+        {
+            Personagem p1 = new Personagem("POO-MAN", 120);
+            while (true)
             {
-                Console.WriteLine();
+                Console.WriteLine("\nPontos de vida: " + p1.Vida);
+                Console.WriteLine("1) Curar");
+                Console.WriteLine("2) Receber Dano");
+                string op = Console.ReadLine();
+                switch (op)
+                {
+                    case "1":
+                        Console.WriteLine("Quantos de vida vc quer curar?");
+                        int pontosDeVida = int.Parse(Console.ReadLine());
+                        p1.Curar(pontosDeVida);
+                        break;
+                    case "2":
+                        Console.WriteLine("Quantos pontos de dano vc quer causar?");
+                        int pontosDeDano = int.Parse(Console.ReadLine());
+                        p1.ReceberDano(pontosDeDano);
+                        break;
+                }
             }
+            Console.ReadKey();
+            Console.WriteLine();
         }
     }
 }
