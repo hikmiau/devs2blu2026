@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C4CF31B-B4FA-4CD5-AA80-B409CDAFDEE8}</ProjectGuid>
+    <ProjectGuid>{0A3AE8D2-02C4-4310-9B42-B8512FAA1BD4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AulaPOO04</RootNamespace>
-    <AssemblyName>AulaPOO04</AssemblyName>
+    <RootNamespace>AulaPOO05</RootNamespace>
+    <AssemblyName>AulaPOO05</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,12 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exercicios\Cadastro.cs" />
-    <Compile Include="Carro.cs" />
-    <Compile Include="Exercicios\ContaBancaria.cs" />
-    <Compile Include="Exercicios\Personagem.cs" />
-    <Compile Include="Exercicios\Retangulo.cs" />
-    <Compile Include="Livro.cs" />
+    <Compile Include="Exercicios\Produto.cs" />
+    <Compile Include="Exercicios\TanqueCombustivel.cs" />
+    <Compile Include="Exercicios\Termometro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
