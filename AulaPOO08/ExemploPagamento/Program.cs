@@ -1,4 +1,4 @@
-﻿namespace ExenploPagamento;
+﻿namespace ExemploPagamento;
 
 class Program
 {
