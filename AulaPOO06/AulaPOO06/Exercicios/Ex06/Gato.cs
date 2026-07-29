@@ -6,6 +6,13 @@ namespace AulaPOO06.Exercicios.Ex06
     {
         public string CorPelagem { get; set; }
 
+        public Gato(string nome, string especie, string corPelagem)
+        {
+            Nome = nome;
+            Especie = especie;
+            CorPelagem = corPelagem;
+        }
+
         public override void FazerSom()
         {
             Console.WriteLine("Miau!");
