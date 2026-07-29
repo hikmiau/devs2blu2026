@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AulaPOO08", "AulaPOO08\AulaPOO08.csproj", "{6135B563-4D7C-4244-A878-15E3A12261AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExenploPagamento", "ExenploPagamento\ExenploPagamento.csproj", "{63C86604-2DB7-49C7-9CC1-CD4A6C2EC188}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6135B563-4D7C-4244-A878-15E3A12261AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6135B563-4D7C-4244-A878-15E3A12261AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6135B563-4D7C-4244-A878-15E3A12261AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6135B563-4D7C-4244-A878-15E3A12261AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63C86604-2DB7-49C7-9CC1-CD4A6C2EC188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C86604-2DB7-49C7-9CC1-CD4A6C2EC188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C86604-2DB7-49C7-9CC1-CD4A6C2EC188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C86604-2DB7-49C7-9CC1-CD4A6C2EC188}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
