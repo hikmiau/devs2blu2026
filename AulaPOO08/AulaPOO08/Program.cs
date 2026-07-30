@@ -23,7 +23,5 @@ class Program
             Console.WriteLine($"O {c.GetType().Name} chamado {((Animal)c).Nome} está caçando");
             c.Caçar();
         }
-
-      
     }
 }
