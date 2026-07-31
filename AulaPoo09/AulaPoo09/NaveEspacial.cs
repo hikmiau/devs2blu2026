@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AulaPoo09
+namespace AulaPOO0a
 {
     internal abstract class NaveEspacial
     {
