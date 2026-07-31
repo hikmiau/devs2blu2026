@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciciosIfElse", "ExerciciosIfElse\ExerciciosIfElse.csproj", "{C216513C-38FB-44A4-A92C-721F9FCBAE21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExemploClasses", "ExemploClasses\ExemploClasses.csproj", "{EAC764DC-889F-4D36-95BF-22C217737B79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C216513C-38FB-44A4-A92C-721F9FCBAE21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C216513C-38FB-44A4-A92C-721F9FCBAE21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C216513C-38FB-44A4-A92C-721F9FCBAE21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C216513C-38FB-44A4-A92C-721F9FCBAE21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAC764DC-889F-4D36-95BF-22C217737B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC764DC-889F-4D36-95BF-22C217737B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC764DC-889F-4D36-95BF-22C217737B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC764DC-889F-4D36-95BF-22C217737B79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
