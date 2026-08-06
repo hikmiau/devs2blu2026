@@ -1,13 +1,15 @@
 ﻿using DesignPatterns01.Factory;
 using DesignPatterns01.Singleton;
-using DesignPatterns01.Singleton.Exercicios;
+using ExSingleton = DesignPatterns01.Singleton.Exercicios;
 
 namespace DesignPatterns01;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
+        ExemploFactory();
+        ExemploSingleton();
         Ex02();
     }
 
@@ -69,8 +71,8 @@ class Program
 
     static void Ex02()
     {
-        var gerenciador1 = Singleton.Exercicios.GerenciadorLicenca.ObterInstancia();
-        var gerenciador2 = Singleton.Exercicios.GerenciadorLicenca.ObterInstancia();
+        var gerenciador1 = ExSingleton.GerenciadorLicenca.ObterInstancia();
+        var gerenciador2 = ExSingleton.GerenciadorLicenca.ObterInstancia();
 
         gerenciador1.AtivarLicenca("ABC123", DateTime.Now.AddYears(1));
         gerenciador2.AtivarLicenca("DEF456", DateTime.Now.AddYears(1));
@@ -84,9 +86,9 @@ class Program
             Console.WriteLine("As instâncias são diferentes.");
         }
 
-        Computador computador1 = new Computador("Computador 1", "Usuario 1");
-        Computador computador2 = new Computador("Computador 2", "Usuario 2");
-        Computador computador3 = new Computador("Computador 3", "Usuario 3");
+        ExSingleton.Computador computador1 = new ExSingleton.Computador("Computador 1", "Usuario 1");
+        ExSingleton.Computador computador2 = new ExSingleton.Computador("Computador 2", "Usuario 2");
+        ExSingleton.Computador computador3 = new ExSingleton.Computador("Computador 3", "Usuario 3");
 
         Console.WriteLine("\n*** COMPUTADOR 1 ***");
         computador1.ExibirDados();
