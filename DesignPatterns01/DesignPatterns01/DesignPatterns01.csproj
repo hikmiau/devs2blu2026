@@ -7,4 +7,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+        <Compile Remove="Singleton\GerenciadorDeLicenca.cs" />
+        <Compile Remove="Singleton\Computador.cs" />
+    </ItemGroup>
+
 </Project>
