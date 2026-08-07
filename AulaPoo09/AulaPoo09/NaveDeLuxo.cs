@@ -8,7 +8,7 @@ namespace AulaPOO0a
 {
     internal class NaveDeLuxo : NaveEspacial, ITeletransportavel
     {
-        public NaveDeLuxo(string nome, double combustivel) : base(nome, combustivel)
+        public NaveDeLuxo(string nome, int combustivel) : base(nome, combustivel)
         {
             this.Nome = nome;
         }
@@ -19,9 +19,7 @@ namespace AulaPOO0a
         }
         public void Teletransportar(string destino)
         {
-            Console.WriteLine("Para qual destino você quer ir?");
-            destino = Console.ReadLine();
-            Console.WriteLine($"\nA Nave {this.Nome} teleportou para {destino}");
+            Console.WriteLine($"A Nave {this.Nome} teleportou para {destino}");
         }
     }
 }

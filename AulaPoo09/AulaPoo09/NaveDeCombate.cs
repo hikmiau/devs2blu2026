@@ -8,7 +8,7 @@ namespace AulaPOO0a
 {
     internal class NaveDeCombate : NaveEspacial
     {
-        public NaveDeCombate(string nome, double combustivel) : base(nome, combustivel)
+        public NaveDeCombate(string nome, int combustivel) : base(nome, combustivel)
         {
             this.Nome = nome;
         }
