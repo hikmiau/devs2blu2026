@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AulaPOO0a
+namespace AulaPOO09
 {
     internal class NaveDeCarga : NaveEspacial
     {
