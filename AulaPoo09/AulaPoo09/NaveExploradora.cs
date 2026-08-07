@@ -1,6 +1,6 @@
 using System;
 
-namespace AulaPOO0a
+namespace AulaPOO09
 {
     internal class NaveExploradora : NaveEspacial, ITeletransportavel
     {

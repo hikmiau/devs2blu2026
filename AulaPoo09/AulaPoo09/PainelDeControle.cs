@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace AulaPOO0a
+namespace AulaPOO09
 {
     internal class PainelDeControle
     {
