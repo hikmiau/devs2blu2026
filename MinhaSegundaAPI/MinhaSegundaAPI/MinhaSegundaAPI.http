@@ -1,6 +1,0 @@
-@MinhaSegundaAPI_HostAddress = http://localhost:5029
-
-GET {{MinhaSegundaAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

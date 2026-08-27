@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\MinhaSegundaAPI.props" />
-</Project>
