@@ -1,4 +1,4 @@
-using Api02.Models;
+﻿using Api02.Models;
 
 namespace Api02.Repositories
 {
@@ -9,5 +9,6 @@ namespace Api02.Repositories
         Task AdicionarAsync(Genero genero);
         Task AtualizarAsync(Genero genero);
         Task RemoverAsync(Genero genero);
+
     }
 }

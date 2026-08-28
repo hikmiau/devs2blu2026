@@ -7,6 +7,7 @@ namespace Api02.Repositories
 {
     public class LivroRepository : ILivroRepository
     {
+
         private readonly AppDbContext _context;
 
         public LivroRepository(AppDbContext context)
@@ -29,15 +30,16 @@ namespace Api02.Repositories
         // select * form livro where autor like "%martin%"
         public async Task<List<Livro>> ObterPorAutorAsync(string autor)
         {
-            return await _context
-                .Livros.Where(l => EF.Functions.ILike(l.Autor, $"%{autor}%"))
+            return await _context.Livros
+                .Include(livro => livro.Genero)
+                .Where(l => EF.Functions.ILike(l.Autor, $"%{autor}%" ))
                 .ToListAsync();
         }
 
         public async Task<Livro?> ObterPorIdAsync(int id)
         {
-            return await _context
-                .Livros.Include(l => l.Genero)
+            return await _context.Livros
+                .Include(l => l.Genero)
                 .FirstOrDefaultAsync(l => l.Id == id);
         }
 

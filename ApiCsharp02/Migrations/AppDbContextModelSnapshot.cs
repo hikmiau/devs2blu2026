@@ -21,7 +21,7 @@ namespace Api02.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Api02.Models.Cliente", b =>
+            modelBuilder.Entity("Api02.Models.Genero", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -29,13 +29,13 @@ namespace Api02.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Clientes");
+                    b.ToTable("Generos");
                 });
 
             modelBuilder.Entity("Api02.Models.Livro", b =>
@@ -53,6 +53,9 @@ namespace Api02.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("GeneroId")
+                        .HasColumnType("integer");
+
                     b.Property<decimal>("Preco")
                         .HasColumnType("numeric");
 
@@ -62,7 +65,25 @@ namespace Api02.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("GeneroId");
+
                     b.ToTable("Livros");
+                });
+
+            modelBuilder.Entity("Api02.Models.Livro", b =>
+                {
+                    b.HasOne("Api02.Models.Genero", "Genero")
+                        .WithMany("livros")
+                        .HasForeignKey("GeneroId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Genero");
+                });
+
+            modelBuilder.Entity("Api02.Models.Genero", b =>
+                {
+                    b.Navigation("livros");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,51 +1,37 @@
-using Api02.Models;
-using Api02.Repoositories;
+﻿using Api02.Models;
+using Api02.Repositories;
 
-namespace Api02.Services;
-
-public class GeneroService : IGeneroService
+namespace Api02.Services
 {
-    private readonly IGeneroRepository _repository;
-
-    public GeneroService(IGeneroRepository repository)
+    public class GeneroService : IGeneroService
     {
-        this._repository = repository;
-    }
 
-    public async Task<bool> AtualizarAsync(int id, Genero genero)
-    {
-        var existente = await _repository.ObterPorIdAsync(id);
-        if (existente is null)
-            return false;
+        private readonly IGeneroRepository _repository;
 
-        existente.Nome = genero.Nome;
-        await _repository.AtualizarAsync(existente);
-        return true;
-    }
+        public GeneroService(IGeneroRepository repository)
+        {
+            this._repository = repository;
+        }
 
-    public async Task<Genero> CriarAsync(Genero genero)
-    {
-        await _repository.AdicionarAsync(genero);
-        return genero;
-    }
+      
 
-    public Task<List<Genero>> ListarAsync()
-    {
-        return _repository.ObterTodosAsync();
-    }
+        public async Task<Genero> CriarAsync(Genero Genero)
+        {
+            await _repository.AdicionarAsync(Genero);
+            return Genero;
+        }
 
-    public Task<Genero?> ObterPorIdAsync(int id)
-    {
-        return _repository.ObterPorIdAsync(id);
-    }
+        public Task<List<Genero>> ListarAsync()
+        {
+            return _repository.ObterTodosAsync();
+              
+        }
 
-    public async Task<bool> RemoverAsync(int id)
-    {
-        var genero = await _repository.ObterPorIdAsync(id);
-        if (genero is null)
-            return false;
+        public Task<Genero?> ObterPorIdAsync(int id)
+        {
+            return _repository.ObterPorIdAsync(id);
+        }
 
-        await _repository.RemoverAsync(genero);
-        return true;
+       
     }
 }
