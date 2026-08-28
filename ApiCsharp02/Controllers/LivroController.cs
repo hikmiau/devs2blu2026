@@ -1,4 +1,5 @@
-﻿using Api02.Models;
+﻿using Api02.DTOs;
+using Api02.Models;
 using Api02.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,7 +31,7 @@ namespace Api02.Controllers
             return livro is null ? NotFound() : Ok(livro);
         }
         [HttpPost]
-        public async Task<ActionResult<Livro>> Criar(Livro livro)
+        public async Task<ActionResult<Livro>> Criar(LivroDto livro)
         {
             var criado = await _service.CriarAsync(livro);
             return CreatedAtAction(nameof(BuscarPorId), new {id = criado.Id}, criado);
