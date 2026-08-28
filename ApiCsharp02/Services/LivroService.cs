@@ -1,4 +1,5 @@
-﻿using Api02.Models;
+﻿using Api02.DTOs;
+using Api02.Models;
 using Api02.Repositories;
 
 namespace Api02.Services
@@ -7,10 +8,12 @@ namespace Api02.Services
     {
 
         private readonly ILivroRepository _repository;
+        private readonly IGeneroService _generoService;
 
-        public LivroService(ILivroRepository repository)
+        public LivroService(ILivroRepository repository, IGeneroService generoService)
         {
-            this._repository = repository;
+            _repository = repository;
+            _generoService = generoService;
         }
 
         public async Task<bool> AtualizarAsync(int id, Livro livro)
@@ -26,8 +29,18 @@ namespace Api02.Services
             return true;
         }
 
-        public async Task<Livro> CriarAsync(Livro livro)
+        public async Task<Livro> CriarAsync(LivroDto dto)
         {
+            var genero = _generoService.ObterPorIdAsync(dto.GeneroId);
+            if (genero is null) return null;
+
+            Livro livro = new Livro();
+            livro.Autor = dto.Autor;
+            livro.Titulo = dto.Titulo;
+            livro.AnoPublicacao = dto.AnoPublicacao;
+            livro.Id = dto.Id;
+            livro.GeneroId = genero.Id;
+
             await _repository.AdicionarAsync(livro);
             return livro;
         }

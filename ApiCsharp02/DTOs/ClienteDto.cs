@@ -1,8 +1,7 @@
-﻿namespace Api02.Models
+﻿namespace Api02.DTOs
 {
-    public class Cliente
+    public class ClienteDto
     {
-        public Guid? Id { get; set; }
         public string Nome { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
     }
