@@ -1,7 +1,6 @@
-using Microsoft.EntityFrameworkCore;
-using MinhaPrimeiraApi.Models;
+using MinhaPrimeiraApi.models;
 
-namespace MinhaPrimeiraApi.DB;
+namespace MinhaPrimeiraApi.db;
 
 public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {
