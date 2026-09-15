@@ -1,0 +1,17 @@
+<h1 >Ola, {{ nome }}!</h1>
+<app-container></app-container>
+
+
+<video></video>
+
+@for (p of pessoas; track $index) {
+  <app-card
+    index={$index}
+    [nome]="p.nome"
+    [idade]="p.idade"
+    [pais]="p.pais"
+  />
+}
+
+
+
