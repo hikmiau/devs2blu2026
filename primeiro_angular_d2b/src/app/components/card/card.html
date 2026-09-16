@@ -1,6 +1,7 @@
 
 <div class="card">
-    <p>Nome: {{ nome }}</p>
-    <p>Idade: {{ idade }}</p>
-    <p>Pais: {{ pais }}</p>
+    <p>Nome: {{ pessoa.nome }}</p>
+    <p>Email: {{ pessoa.email }}</p>
+    <p>Idade: {{ pessoa.idade }}</p>
+    <p>Status: {{ pessoa.ativo ? 'Ativo' : 'Inativo' }}</p>
 </div>
