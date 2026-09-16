@@ -1,0 +1,30 @@
+<div class="cadastro">
+    <input placeholder="Nome Completo"
+        [value]="nome()"
+        (input)="nome.set($any($event.target).value)"
+        />
+    <input placeholder="Email"
+        [value]="email()"
+        (input)="email.set($any($event.target).value)"
+        />
+    <input placeholder="Idade"
+        [value]="idade()"
+        (input)="idade.set($any($event.target).value)"
+        />
+    <input type="checkbox"
+        [checked]="ativo()"
+        (change)="ativo.set($any($event.target).checked)"
+        />
+  <button type="button" (click)="cadastrar()" [disabled]="!podeCadastrar()">Cadastrar</button>
+
+    <p>Total de pessoas: {{ total() }}</p>
+
+    @for (pessoa of pessoas(); track $index) {
+        <div class="pessoa">
+            <app-card [pessoa]="pessoa"></app-card>
+        </div>
+    }
+</div>
+
+
+
