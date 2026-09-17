@@ -17,7 +17,6 @@ export class Cadastro implements OnInit {
   idade = signal(0);
   ativo = signal(true);
 
-  
 
   pessoas = signal<Pessoa[]>([]);
 

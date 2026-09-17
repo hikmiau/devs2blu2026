@@ -4,10 +4,11 @@ import { Cabecalho } from './components/cabecalho/cabecalho';
 import { FormsModule } from '@angular/forms';
 import { NgFor } from '@angular/common';
 import { Cadastro } from './components/cadastro/cadastro';
+import { ListaTarefas } from './components/lista-tarefas/lista-tarefas';
 
 
 @Component({
-  imports: [RouterOutlet, FormsModule, Cabecalho, Cadastro],
+  imports: [RouterOutlet, FormsModule, Cabecalho, Cadastro, ListaTarefas],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
