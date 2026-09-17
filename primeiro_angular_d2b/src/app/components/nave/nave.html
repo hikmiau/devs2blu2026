@@ -1,0 +1,12 @@
+<div>
+  <h2>{{ nome() }}</h2>
+  <p>Combustível: {{ combustivel() }}</p>
+  <p>Triplulação: {{ tripulacao() }}</p>
+
+  <div>
+    [style.width]="combustivel() + '%'";
+  </div>
+  @if (tripulacao() == 0){
+    <p>sem tripulação</p>
+  }
+</div>
