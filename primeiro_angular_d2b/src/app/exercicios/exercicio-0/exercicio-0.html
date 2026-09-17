@@ -1,0 +1,6 @@
+<section class="exercicio-0" [style.backgroundColor]="obterCorFundo()" [style.color]="obterCorTexto()">
+  <h1>Exercício 0 - Seletor de Tema</h1>
+  <app-seletor-tema (temaEscolhido)="aoTemaEscolhido($event)"></app-seletor-tema>
+  <p>Tema atual: <strong>{{ temaSelecionado() }}</strong></p>
+  <p>Clique nos botões acima para mudar a cor de fundo da página.</p>
+</section>

@@ -1,0 +1,50 @@
+<section class="painel-naves">
+  <h1>Painel de Naves</h1>
+
+  <div class="cadastro">
+    <label>
+      Nome
+      <input
+        [ngModel]="nomeNovo()"
+        (ngModelChange)="nomeNovo.set($event)"
+        type="text"
+      />
+    </label>
+    <label>
+      Combustível
+      <input
+        [ngModel]="combustivelNovo()"
+        (ngModelChange)="combustivelNovo.set($event)"
+        type="number"
+      />
+    </label>
+    <label>
+      Tripulação
+      <input
+        [ngModel]="tripulacaoNova()"
+        (ngModelChange)="tripulacaoNova.set($event)"
+        type="number"
+      />
+    </label>
+    <button (click)="atracar()" [disabled]="!podeAtracar()">Atracar</button>
+  </div>
+
+  <p>Total: {{ total() }}</p>
+  <p>Tripulação total: {{ tripulacaoTotal() }}</p>
+
+  @if (alerta()) {
+    <p class="alerta">Há uma nave com pouco combustível.</p>
+  }
+
+  <div class="naves">
+    @for (nave of naves(); track nave.nome) {
+      <app-card-nave
+        [nome]="nave.nome"
+        [combustivel]="nave.combustivel"
+        [tripulacao]="nave.tripulacao"
+      ></app-card-nave>
+    } @empty {
+      <p>hangar vazio</p>
+    }
+  </div>
+</section>

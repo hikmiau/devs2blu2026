@@ -5,10 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { NgFor } from '@angular/common';
 import { Cadastro } from './components/cadastro/cadastro';
 import { ListaTarefas } from './components/lista-tarefas/lista-tarefas';
+import { PainelNaves } from './components/painel-naves/painel-naves';
 
 
 @Component({
-  imports: [RouterOutlet, FormsModule, Cabecalho, Cadastro, ListaTarefas],
+  imports: [RouterOutlet, FormsModule, Cabecalho, Cadastro, ListaTarefas, PainelNaves],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

@@ -1,0 +1,16 @@
+<section class="exercicio-1">
+  <h1>Exercício 1 - O Quadrado que Cresce</h1>
+  
+  <div class="container">
+    <div class="quadrado" [style.width.px]="tamanho()" [style.height.px]="tamanho()"></div>
+    <div class="info">
+      <p>Tamanho: <strong>{{ tamanho() }}px</strong></p>
+    </div>
+  </div>
+
+  <div class="controles">
+    <button (click)="aumentar()">+10</button>
+    <button (click)="diminuir()">-10</button>
+    <button (click)="resetar()">Reset</button>
+  </div>
+</section>

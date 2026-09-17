@@ -1,0 +1,40 @@
+.exercicio-4 {
+  padding: 40px 20px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+.exercicio-4.luz-acesa {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.exercicio-4.luz-apagada {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.exercicio-4 h1 {
+  margin-bottom: 30px;
+}
+
+.quarto {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.exercicio-4 button {
+  padding: 16px 32px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.exercicio-4 button:hover {
+  background-color: #0056b3;
+}

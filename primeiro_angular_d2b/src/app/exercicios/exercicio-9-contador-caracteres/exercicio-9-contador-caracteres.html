@@ -1,0 +1,19 @@
+<section class="exercicio-9">
+  <h1>Exercício 9 - Contador de Caracteres</h1>
+  
+  <textarea 
+    [value]="texto()"
+    (input)="aoDigitar($event)"
+    placeholder="Escreva sua mensagem aqui..."
+  ></textarea>
+
+  <div class="contador" [class.alerta]="ultrapassouLimite()">
+    <p>Caracteres restantes: <strong [class.vermelho]="ultrapassouLimite()">{{ caracteresRestantes() }}</strong></p>
+  </div>
+
+  @if (ultrapassouLimite()) {
+    <p class="aviso">⚠️ Você ultrapassou o limite de 140 caracteres!</p>
+  }
+
+  <button [disabled]="ultrapassouLimite()">Publicar</button>
+</section>

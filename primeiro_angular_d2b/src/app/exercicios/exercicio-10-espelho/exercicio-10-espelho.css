@@ -1,0 +1,57 @@
+.exercicio-10 {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.exercicio-10 h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.exercicio-10 input {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto 30px;
+  padding: 12px;
+  font-size: 1em;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+}
+
+.exercicio-10 input:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.espelhos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.espelho {
+  background-color: #f8f9fa;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.espelho h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #007bff;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+.espelho p {
+  margin: 0;
+  font-size: 1.1em;
+  color: #333;
+  word-break: break-word;
+  min-height: 30px;
+}

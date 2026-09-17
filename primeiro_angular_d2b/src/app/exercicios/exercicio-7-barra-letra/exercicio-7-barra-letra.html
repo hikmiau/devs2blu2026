@@ -1,0 +1,20 @@
+<section class="exercicio-7">
+  <h1>Exercício 7 - Barra que Aumenta a Letra</h1>
+  
+  <div class="controle">
+    <label>
+      Tamanho da Fonte: {{ tamanhoFonte() }}px
+    </label>
+    <input 
+      type="range" 
+      min="10" 
+      max="80"
+      [value]="tamanhoFonte()"
+      (input)="aoMudarBarra($event)"
+    />
+  </div>
+
+  <p [style.fontSize.px]="tamanhoFonte()">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+  </p>
+</section>

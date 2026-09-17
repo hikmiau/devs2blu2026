@@ -1,0 +1,21 @@
+<section class="exercicio-2">
+  <h1>Exercício 2 - Contador de Cliques</h1>
+  
+  <div class="contador">
+    <p>Cliques: <strong>{{ cliques() }}</strong></p>
+  </div>
+
+  <div class="controles">
+    <button 
+      (click)="somar()"
+      [class.aviso]="deveFicarVermelho()"
+    >
+      +1
+    </button>
+    <button (click)="zerar()">Zerar</button>
+  </div>
+
+  @if (deveFicarVermelho()) {
+    <p class="alerta">⚠️ Você está exagerando!</p>
+  }
+</section>

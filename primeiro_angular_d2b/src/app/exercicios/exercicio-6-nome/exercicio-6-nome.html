@@ -1,0 +1,12 @@
+<section class="exercicio-6">
+  <h1>Exercício 6 - Meu Nome na Tela</h1>
+  
+  <input 
+    type="text" 
+    [value]="nome()"
+    (input)="aoDigitar($event)"
+    placeholder="Digite seu nome"
+  />
+
+  <h2>{{ obterSaudacao() }}</h2>
+</section>

@@ -1,0 +1,32 @@
+<section class="exercicio-10">
+  <h1>Exercício 10 - Espelho Maluco</h1>
+  
+  <input 
+    type="text" 
+    [value]="texto()"
+    (input)="aoDigitar($event)"
+    placeholder="Digite algo..."
+  />
+
+  <div class="espelhos">
+    <div class="espelho">
+      <h3>MAIÚSCULAS</h3>
+      <p>{{ maiusculas() }}</p>
+    </div>
+
+    <div class="espelho">
+      <h3>INVERTIDO</h3>
+      <p>{{ invertido() }}</p>
+    </div>
+
+    <div class="espelho">
+      <h3>PALAVRAS</h3>
+      <p>{{ numeroPalavras() }}</p>
+    </div>
+
+    <div class="espelho">
+      <h3>CARACTERES</h3>
+      <p>{{ numeroCaracteres() }}</p>
+    </div>
+  </div>
+</section>

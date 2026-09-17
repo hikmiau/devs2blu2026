@@ -1,0 +1,14 @@
+.card-nave {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.barra {
+  border: 1px solid #333;
+  height: 1rem;
+}
+
+.combustivel {
+  height: 100%;
+}

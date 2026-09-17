@@ -1,0 +1,21 @@
+<section class="exercicio-8">
+  <h1>Exercício 8 - Seletor de Cor</h1>
+  
+  <div class="seletor-container">
+    <label>
+      Escolha a Cor:
+      <input 
+        type="color" 
+        [value]="corSelecionada()"
+        (input)="aoMudarCor($event)"
+      />
+    </label>
+  </div>
+
+  <div 
+    class="quadrado-cor" 
+    [style.backgroundColor]="corSelecionada()"
+  ></div>
+
+  <p>Cor: <strong>{{ corSelecionada() }}</strong></p>
+</section>

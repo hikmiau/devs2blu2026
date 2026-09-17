@@ -1,12 +1,19 @@
-<div>
+<article class="card-nave">
   <h2>{{ nome() }}</h2>
-  <p>Combustível: {{ combustivel() }}</p>
-  <p>Triplulação: {{ tripulacao() }}</p>
+  <p>Tripulação: {{ tripulacao() }}</p>
 
-  <div>
-    [style.width]="combustivel() + '%'";
+  <div class="barra">
+    <div
+      class="combustivel"
+      [style.width]="combustivel() + '%'"
+      [style.background]="corBarra()"
+    ></div>
   </div>
-  @if (tripulacao() == 0){
+
+  <p>Combustível: {{ combustivel() }}%</p>
+  <p>Status: {{ status() }}</p>
+
+  @if (tripulacao() === 0) {
     <p>sem tripulação</p>
   }
-</div>
+</article>

@@ -1,0 +1,16 @@
+<section class="exercicio-16">
+  <h1>Exercício 16 - Spoiler</h1>
+  
+  <div class="cartao">
+    <h2>Qual é o resultado de 2 + 2?</h2>
+
+    @if (!mostrarResposta()) {
+      <button (click)="alternarResposta()">Mostrar Resposta</button>
+    } @else {
+      <div class="resposta">
+        <p>A resposta é: <strong>4</strong></p>
+      </div>
+      <button (click)="alternarResposta()">Esconder</button>
+    }
+  </div>
+</section>

@@ -1,0 +1,39 @@
+<section class="exercicio-15">
+  <h1>Exercício 15 - Adivinhe o Número</h1>
+  
+  <p>Tente adivinhar um número entre 1 e 100!</p>
+
+  @if (!acertou() && !desistiu()) {
+    <div class="jogo">
+      <label>
+        Seu chute:
+        <input 
+          type="number" 
+          min="1" 
+          max="100"
+          [value]="chute()"
+          (input)="aoDigitar($event)"
+        />
+      </label>
+
+      <div class="botoes">
+        <button (click)="chutar()">Chutar</button>
+        <button class="desistir" (click)="desistir()">Desistir</button>
+      </div>
+    </div>
+  }
+
+  @if (mensagem()) {
+    <div class="mensagem">
+      <p>{{ mensagem() }}</p>
+    </div>
+  }
+
+  @if (tentativas() > 0) {
+    <p class="tentativas">Tentativas: <strong>{{ tentativas() }}</strong></p>
+  }
+
+  @if (acertou() || desistiu()) {
+    <button class="novo-jogo" (click)="jogarNovamente()">Jogar de Novo</button>
+  }
+</section>
