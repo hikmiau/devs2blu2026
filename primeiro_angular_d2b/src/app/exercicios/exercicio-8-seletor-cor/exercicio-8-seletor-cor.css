@@ -1,0 +1,40 @@
+.exercicio-8 {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.exercicio-8 h1 {
+  margin-bottom: 30px;
+}
+
+.seletor-container {
+  margin-bottom: 30px;
+}
+
+.seletor-container label {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.seletor-container input[type="color"] {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.quadrado-cor {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #333;
+  border-radius: 8px;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.exercicio-8 p {
+  font-size: 1.1em;
+}

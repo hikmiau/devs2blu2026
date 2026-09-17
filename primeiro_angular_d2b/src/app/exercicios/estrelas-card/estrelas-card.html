@@ -1,0 +1,8 @@
+<div class="estrelas">
+  @for (estrela of obterEstrelas(); let i = $index) {
+    <span class="estrela" [class.cheia]="estrela.cheia">
+      {{ estrela.cheia ? '★' : '☆' }}
+    </span>
+  }
+  <span class="nota">{{ notaValidada() }}/5</span>
+</div>

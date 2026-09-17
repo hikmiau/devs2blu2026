@@ -1,0 +1,15 @@
+.exercicio-0 {
+  padding: 40px 20px;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.exercicio-0 h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.exercicio-0 p {
+  text-align: center;
+  font-size: 1.1em;
+}

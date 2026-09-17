@@ -1,0 +1,39 @@
+.exercicio-3 {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.exercicio-3 h1 {
+  margin-bottom: 30px;
+}
+
+.semaforo-container {
+  margin-bottom: 30px;
+}
+
+.circulo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.semaforo-container p {
+  font-size: 1.2em;
+}
+
+.exercicio-3 button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.exercicio-3 button:hover {
+  background-color: #0056b3;
+}

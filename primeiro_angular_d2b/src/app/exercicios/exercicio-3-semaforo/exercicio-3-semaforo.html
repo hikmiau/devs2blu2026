@@ -1,0 +1,10 @@
+<section class="exercicio-3">
+  <h1>Exercício 3 - Semáforo</h1>
+  
+  <div class="semaforo-container">
+    <div class="circulo" [style.backgroundColor]="obterCor()"></div>
+    <p>Cor atual: <strong>{{ cores[indiceAtual()] }}</strong></p>
+  </div>
+
+  <button (click)="proximaCor()">Próxima</button>
+</section>

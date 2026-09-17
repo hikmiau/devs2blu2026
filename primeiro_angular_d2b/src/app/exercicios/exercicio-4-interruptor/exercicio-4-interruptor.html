@@ -1,0 +1,15 @@
+<section 
+  class="exercicio-4"
+  [class.luz-acesa]="luzAcesa()"
+  [class.luz-apagada]="!luzAcesa()"
+>
+  <h1>Exercício 4 - Interruptor de Luz</h1>
+  
+  <div class="quarto">
+    <p>Quarto: {{ luzAcesa() ? '☀️ Iluminado' : '🌙 Escuro' }}</p>
+  </div>
+
+  <button (click)="alternarLuz()">
+    {{ obterTexto() }}
+  </button>
+</section>

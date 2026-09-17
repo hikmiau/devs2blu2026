@@ -1,0 +1,14 @@
+<section class="exercicio-17">
+  <h1>Exercício 17 - Estrelas de Avaliação</h1>
+  
+  <div class="lista-filmes">
+    @for (filme of filmes(); track filme.id) {
+      <div class="filme-card">
+        <h3>{{ filme.titulo }}</h3>
+        <app-estrelas-card [nota]="filme.nota"></app-estrelas-card>
+      </div>
+    } @empty {
+      <p>Nenhum filme cadastrado.</p>
+    }
+  </div>
+</section>

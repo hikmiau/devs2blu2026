@@ -1,0 +1,15 @@
+<section class="exercicio-5">
+  <h1>Exercício 5 - Dado de RPG</h1>
+  
+  <div class="dado">
+    <p class="resultado">{{ obterTextoResultado() }}</p>
+  </div>
+
+  <button (click)="rolar()">Rolar</button>
+
+  <div class="stats">
+    <p>Rolagens: <strong>{{ totalRolagens() }}</strong></p>
+    <p>Soma Total: <strong>{{ somaResultados() }}</strong></p>
+    <p>Média: <strong>{{ media().toFixed(2) }}</strong></p>
+  </div>
+</section>
