@@ -1,0 +1,15 @@
+<h2>Produtos</h2>
+
+@if(carregando()){
+    <p>Carregando...</p>
+}@else if(erro()){
+    <p class="erro">{{erro()}}</p>
+}@else {
+    @for (item of produtos(); track $index) {
+    <div class="card">
+        <img [src]="item.image" width="80">
+        <h3> <strong>{{item.title}}</strong></h3>
+        <p>R$ {{item.price}}</p>
+    </div>
+}
+}

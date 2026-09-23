@@ -1,0 +1,20 @@
+<p>cadastrar-produto</p>
+
+<input
+    placeholder="Titulo"
+    type="text"
+    [value]="dados().title"
+    (input)="alterar('title', $any($event.target).value)">
+
+<input
+    placeholder="Preco"
+    type="number"
+    [value]="dados().price"
+    (input)="alterar('price', $any($event.target).value)">
+    <button (click)="salvar()" [disabled]="salvando() || !podeSalvar()">{{salvando()? 'Salvando...' : 'Salvar'}}</button>
+@if(erro()){
+    <p>ERRO {{erro()}}</p>
+}
+@if(sucesso()){
+    <p>Produto criado com id {{sucesso()}}</p>
+}

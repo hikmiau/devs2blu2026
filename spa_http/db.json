@@ -1,0 +1,124 @@
+﻿{
+  "produtos": [
+    {
+      "id": 1,
+      "title": "Smartphone Galaxy A55",
+      "price": 1899.99,
+      "category": "eletronicos",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+      "description": "Smartphone com tela AMOLED de 6.6 polegadas, 8GB de RAM e 128GB de armazenamento.",
+      "rating": {
+        "rate": 4.6,
+        "count": 245
+      }
+    },
+    {
+      "id": 2,
+      "title": "Notebook Ultra Slim",
+      "price": 3499.99,
+      "category": "informatica",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
+      "description": "Notebook leve e compacto, ideal para estudos, trabalho e entretenimento.",
+      "rating": {
+        "rate": 4.7,
+        "count": 189
+      }
+    },
+    {
+      "id": 3,
+      "title": "Fone Bluetooth Pro",
+      "price": 249.90,
+      "category": "eletronicos",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+      "description": "Fone de ouvido Bluetooth com cancelamento de ruído e bateria de longa duração.",
+      "rating": {
+        "rate": 4.5,
+        "count": 532
+      }
+    },
+    {
+      "id": 4,
+      "title": "Tênis Esportivo Runner",
+      "price": 299.90,
+      "category": "calcados",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+      "description": "Tênis confortável e leve para corrida, academia e atividades do dia a dia.",
+      "rating": {
+        "rate": 4.8,
+        "count": 421
+      }
+    },
+    {
+      "id": 5,
+      "title": "Mochila Casual Premium",
+      "price": 159.90,
+      "category": "acessorios",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+      "description": "Mochila resistente com compartimento para notebook e diversos bolsos internos.",
+      "rating": {
+        "rate": 4.4,
+        "count": 156
+      }
+    },
+    {
+      "id": 6,
+      "title": "Relógio Smart Fit",
+      "price": 399.90,
+      "category": "eletronicos",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+      "description": "Smartwatch com monitoramento de atividades físicas, notificações e controle de saúde.",
+      "rating": {
+        "rate": 4.6,
+        "count": 278
+      }
+    },
+    {
+      "id": 7,
+      "title": "Camiseta Básica Premium",
+      "price": 79.90,
+      "category": "roupas",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+      "description": "Camiseta básica de algodão com tecido confortável e acabamento premium.",
+      "rating": {
+        "rate": 4.3,
+        "count": 312
+      }
+    },
+    {
+      "id": 8,
+      "title": "Câmera Digital Compacta",
+      "price": 1299.90,
+      "category": "fotografia",
+      "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32",
+      "description": "Câmera digital compacta para registrar fotos e vídeos com alta qualidade.",
+      "rating": {
+        "rate": 4.5,
+        "count": 97
+      }
+    },
+    {
+      "id": 9,
+      "title": "Cadeira Gamer Confort",
+      "price": 899.90,
+      "category": "moveis",
+      "image": "https://images.unsplash.com/photo-1598550476439-6847785fcea6",
+      "description": "Cadeira gamer ergonômica com apoio lombar e encosto reclinável.",
+      "rating": {
+        "rate": 4.7,
+        "count": 203
+      }
+    },
+    {
+      "id": 10,
+      "title": "Caixa de Som Bluetooth",
+      "price": 229.90,
+      "category": "eletronicos",
+      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1",
+      "description": "Caixa de som portátil Bluetooth com som potente e bateria de longa duração.",
+      "rating": {
+        "rate": 4.6,
+        "count": 367
+      }
+    }
+  ]
+}

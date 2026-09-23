@@ -1,0 +1,21 @@
+<h2>Buscar Produto</h2>
+
+<input
+    type="number"
+    placeholder="Digite o ID"
+    [value]="id()"
+    (input)="id.set($any($event.target).value)"
+/>
+<button (click)="buscarPorId()" [disabled]="carregando()">Buscar Produto</button>
+
+@if(erro()){
+    <p class="erro">{{erro()}}</p>
+}
+@if(produto(); as p){
+    <div class="card">
+        <img [src]="p.image" width="80">
+        <p><strong>{{p.title}}</strong></p>
+        <p>R$ {{p.price}}</p>
+        <small>{{p.category}}</small>
+    </div>
+}
