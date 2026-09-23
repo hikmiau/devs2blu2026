@@ -17,12 +17,6 @@ ProjetoSistemaBioDome/**/*.pub
 **/authorized_keys
 **/known_hosts
 
-# Visual Studio / Rider cache & settings
-.vs/
-.idea/
-*.user
-*.suo
-
 # Build outputs
 [Bb]in/
 [Oo]bj/
@@ -66,6 +60,8 @@ node_modules/
 # IDEs & Editors
 /.idea
 /.vscode
+.vs/
+*.user
 *.suo
 *.ntvs*
 *.njsproj
