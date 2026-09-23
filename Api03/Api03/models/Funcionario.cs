@@ -1,4 +1,4 @@
-namespace Api03.models;
+namespace Api03.Models;
 
 public class Funcionario
 {
@@ -7,7 +7,7 @@ public class Funcionario
     public double Salario { get; set; }
     
     public int SetorId { get; set; }
-    public Setor? Setor { get; set; } 
+    public Setor? Setor { get; set; } = new Setor();
     
     public ICollection<Endereco> Enderecos { get; set; } = new List<Endereco>();
 }

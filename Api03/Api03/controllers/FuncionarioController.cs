@@ -1,23 +1,23 @@
-using Api03.models;
-using Api03.repositories;
-using Api03.services;
+using Api03.Models;
+using Api03.Repositories;
+using Api03.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api03.controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class FuncionarioController :ControllerBase
+public class FuncionarioController : ControllerBase
 {
     private readonly IFuncionarioService _service;
-    
+
     public FuncionarioController(IFuncionarioService service)
     {
         _service = service;
     }
-    
+
     [HttpGet]
-    public async Task<ActionResult<List<Funcionario>>> Listar([FromQuery] int? setorId) 
+    public async Task<ActionResult<List<Funcionario>>> Listar([FromQuery] int? setorId)
     {
         return Ok(await _service.ListarAsync(setorId));
     }
@@ -28,7 +28,7 @@ public class FuncionarioController :ControllerBase
         var funcionario = await _service.ObterPorIdAsync(id);
         return funcionario is null ? NotFound() : Ok(funcionario);
     }
-    
+
     [HttpPost]
     public async Task<ActionResult<Funcionario>> Criar(Funcionario funcionario)
     {
@@ -42,7 +42,7 @@ public class FuncionarioController :ControllerBase
     {
         var (atualizado, erro) = await _service.AtualizarAsync(id, funcionario);
         if (atualizado) NoContent();
-        return erro is null ? NotFound() : BadRequest(new {mensagem = erro});
+        return erro is null ? NotFound() : BadRequest(new { mensagem = erro });
     }
 
     [HttpDelete("{id}")]

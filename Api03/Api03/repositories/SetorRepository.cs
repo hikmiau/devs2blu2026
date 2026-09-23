@@ -1,10 +1,8 @@
-using Api03.infra;
-using Api03.models;
+using Api03.Infra;
+using Api03.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Api03.repositories;
-
-
+namespace Api03.Repositories;
 
 public interface ISetorRepository
 {
@@ -57,11 +55,7 @@ public class SetorRepository : ISetorRepository
     }
     public async Task RemoverAsync(Setor setor)
     {
-            _context.Setores.Remove(setor);
-            await _context.SaveChangesAsync();
+        _context.Setores.Remove(setor);
+        await _context.SaveChangesAsync();
     }
-
-   
-
-    
 }

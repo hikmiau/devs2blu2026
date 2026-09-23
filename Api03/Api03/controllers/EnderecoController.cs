@@ -1,4 +1,4 @@
-using Api03.models;
+using Api03.Models;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,22 +27,10 @@ public class EnderecoController : ControllerBase
     public async Task<ActionResult<Endereco>> Obter(int funcionarioId, int id)
     {
         var endereco = await _service.ObterAsync(id);
-        
-        if(endereco is null || endereco.FuncionarioId != funcionarioId)
+
+        if (endereco is null || endereco.FuncionarioId != funcionarioId)
             return NotFound();
         return Ok(endereco);
-    
-    }
 
-    [HttpPut(template: "{id}")]
-
-    public async Task<IActionResult> Atualizar(int id, [FromBody] Endereco endereco)
-    {
-        var enderecoExistente = await _service.ObterAsync(id);
-        if (enderecoExistente is null)
-            return NotFound();
-        endereco.Id = id;
-        var enderecoAtualizado = await _service.AtualizarAsync(id, endereco);
-        return Ok(enderecoAtualizado);
     }
 }

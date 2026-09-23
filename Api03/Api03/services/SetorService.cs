@@ -1,8 +1,7 @@
-using Api03.models;
-using Api03.repositories;
+using Api03.Models;
+using Api03.Repositories;
 
-namespace Api03.services;
-
+namespace Api03.Services;
 
 public interface ISetorService
 {

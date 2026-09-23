@@ -1,10 +1,10 @@
-using Api03.infra;
-using Api03.models;
+using Api03.Infra;
+using Api03.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Api03.repositories;
+namespace Api03.Repositories;
 
-public interface IFuncionarioioRepository
+public interface IFuncionarioRepository
 {
     Task<List<Funcionario>> ListarAsync();
     Task<List<Funcionario>> ListarPorSetorAsync(int setorId);
@@ -15,7 +15,7 @@ public interface IFuncionarioioRepository
     Task RemoverAsync(Funcionario Funcionario);
 }
 
-public class FuncionarioRepository : IFuncionarioioRepository
+public class FuncionarioRepository : IFuncionarioRepository
 {
     private readonly AppDbContext _context;
     
@@ -28,7 +28,7 @@ public class FuncionarioRepository : IFuncionarioioRepository
         _context.Funcionarios
             .Include(f => f.Setor)
             .Include(f => f.Enderecos);
-    
+
     public async Task<List<Funcionario>> ListarAsync()
     {
         return await ComRelacionamento().AsNoTracking().ToListAsync();
@@ -42,14 +42,14 @@ public class FuncionarioRepository : IFuncionarioioRepository
             .ToListAsync();
     }
 
-    public async Task<Funcionario?> ObterPorIdAsync(int id)
+    public async Task<Funcionario> ObterPorIdAsync(int id)
     {
-       return await ComRelacionamento().FirstOrDefaultAsync(f => f.Id == id);
+        return await ComRelacionamento().FirstOrDefaultAsync(f => f.Id == id);
     }
 
-    public async Task AdicionarAsync(Funcionario Funcionario)
+    public async Task AdicionarAsync(Funcionario funcionario)
     {
-        _context.Funcionarios.Add(Funcionario);
+        _context.Funcionarios.Add(funcionario);
         await _context.SaveChangesAsync();
     }
 
@@ -57,17 +57,16 @@ public class FuncionarioRepository : IFuncionarioioRepository
     {
         return await ComRelacionamento().AnyAsync(f => f.Id == id);
     }
-
-    public async Task AtualizarAsync(Funcionario Funcionario)
+    
+    public async Task AtualizarAsync(Funcionario funcionario)
     {
-        _context.Funcionarios.Update(Funcionario);
+        _context.Entry(funcionario).State = EntityState.Modified;
         await _context.SaveChangesAsync();
-
     }
 
-    public async Task RemoverAsync(Funcionario Funcionario)
+    public async Task RemoverAsync(Funcionario funcionario)
     {
-        _context.Funcionarios.Remove(Funcionario);
+        _context.Funcionarios.Remove(funcionario);
         await _context.SaveChangesAsync();
     }
 }

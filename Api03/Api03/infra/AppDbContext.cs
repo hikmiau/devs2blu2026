@@ -1,12 +1,13 @@
-using Api03.models;
+using Api03.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Api03.infra;
+namespace Api03.Infra;
 
 public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {
+        
     }
     
     public DbSet<Setor> Setores => Set<Setor>();
@@ -27,5 +28,4 @@ public class AppDbContext : DbContext
             .HasForeignKey(e => e.FuncionarioId)
             .OnDelete(DeleteBehavior.Restrict);
     }
-    
 }

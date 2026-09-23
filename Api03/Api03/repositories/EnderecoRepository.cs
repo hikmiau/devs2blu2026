@@ -1,8 +1,9 @@
-using Api03.infra;
-using Api03.models;
+using System.Net.NetworkInformation;
+using Api03.Infra;
+using Api03.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Api03.repositories;
+namespace Api03.Repositories;
 
 public interface IEnderecoRepository
 {
@@ -13,14 +14,13 @@ public interface IEnderecoRepository
     Task RemoverAsync(Endereco endereco);
 }
 
-public class EnderecoRepository : IEnderecoRepository
+public class EnderecoRepository
 {
-    
     private readonly AppDbContext _context;
     
     public EnderecoRepository(AppDbContext context)
     {
-        this._context = context;
+        _context = context;
     }
     
     public async Task<List<Endereco>> ListarPorFuncionarioAsync(int funcionarioId)
