@@ -1,5 +1,6 @@
 using ProdutosApi.Domain;
 using ProdutosApi.DTOs;
+using ProdutosApi.Exceptions;
 using ProdutosApi.Repositories;
 
 namespace ProdutosApi.Services;
@@ -21,14 +22,22 @@ public class ProdutoService : IProdutoService
         );
     }
 
-    public async Task<ProdutoResponse?> ObterPorIdAsync(int id, CancellationToken ct = default)
+    public async Task<ProdutoResponse> ObterPorIdAsync(int id, CancellationToken ct = default)
     {
-        var produto = await _repository.ObterPorIdAsync(id, ct);
-        return produto is null ? null : Mapear(produto);
+        var produto = await _repository.ObterPorIdAsync(id, ct) 
+            ?? throw new RecursoNaoEncontradoException("Produto", id);
+        
+        return Mapear(produto);
+        
     }
 
     public async Task<ProdutoResponse> CriarAsync(ProdutoRequest request, CancellationToken ct = default)
     {
+        var nome = request.Nome.Trim();
+        
+        if(await _repository.ExisteNomeAsync(nome, null, ct))
+            throw new ConflitoException($"Ja existe um produto chamado '{nome}'.");
+        
         var produto = new Produto
         {
             Nome = request.Nome.Trim(),
@@ -37,6 +46,7 @@ public class ProdutoService : IProdutoService
             Estoque = request.Estoque,
             CriadoEm = DateTime.UtcNow
         };
+        
 
         await _repository.AdicionarAsync(produto, ct);
         await _repository.SalvarAsync(ct);
@@ -44,14 +54,21 @@ public class ProdutoService : IProdutoService
         return Mapear(produto);
     }
 
-    public async Task<ProdutoResponse?> AtualizarAsync(int id, ProdutoRequest request, CancellationToken ct = default)
+    public async Task<ProdutoResponse> AtualizarAsync(int id, ProdutoRequest request, CancellationToken ct = default)
     {
-        var produto = await _repository.ObterPorIdAsync(id, ct);
+        var produto = await _repository.ObterPorIdAsync(id, ct)
+            ?? throw new RecursoNaoEncontradoException("Produto", id);
 
-        if (produto is null)
-            return null;
+        var nome = request.Nome.Trim();
 
-        produto.Nome = request.Nome.Trim();
+        if(await _repository.ExisteNomeAsync(nome, null, ct))
+            throw new ConflitoException($"Ja existe um produto chamado '{nome}'.");
+        
+        if(produto.Estoque > 0 && request.Estoque == 0 && request.Preco > produto.Preco * 2)
+           throw new RegraNegocioException("Não é permitido reduzir o estoque para zero e aumentar o preço em mais de 100%.");
+        
+        
+        produto.Nome = nome;
         produto.Descricao = request.Descricao?.Trim();
         produto.Preco = request.Preco;
         produto.Estoque = request.Estoque;
@@ -63,10 +80,8 @@ public class ProdutoService : IProdutoService
 
     public async Task<bool> RemoverAsync(int id, CancellationToken ct = default)
     {
-        var produto = await _repository.ObterPorIdAsync(id, ct);
-
-        if (produto is null)
-            return false;
+        var produto = await _repository.ObterPorIdAsync(id, ct)
+            ?? throw new RecursoNaoEncontradoException("Produto", id);
 
         _repository.Remover(produto);
         await _repository.SalvarAsync(ct);
@@ -74,6 +89,24 @@ public class ProdutoService : IProdutoService
         return true;
     }
 
+    public async Task<ProdutoResponse> AdicionarEtiquetaAsync(int produtoId, int etiquetaId, CancellationToken ct = default)
+    {
+        var produto = await _repository.ObterPorIdAsync(produtoId, ct)
+            ?? throw new RecursoNaoEncontradoException("Produto", produtoId);
+
+        var etiqueta = await _repository.ObterEtiquetaPorIdAsync(etiquetaId, ct)
+            ?? throw new RecursoNaoEncontradoException("Etiqueta", etiquetaId);
+
+        if (await _repository.EtiquetaJaAssociadaAsync(produtoId, etiquetaId, ct))
+            throw new ConflitoException($"A etiqueta '{etiqueta.Nome}' já está associada ao produto '{produto.Nome}'.");
+
+        produto.Etiquetas.Add(etiqueta);
+        await _repository.SalvarAsync(ct);
+
+        return Mapear(produto);
+    }
+
     private static ProdutoResponse Mapear(Produto p) =>
-        new(p.Id, p.Nome, p.Descricao, p.Preco, p.Estoque, p.CriadoEm);
+        new(p.Id, p.Nome, p.Descricao, p.Preco, p.Estoque, p.CriadoEm, 
+            p.Etiquetas.Select(e => new EtiquetaDtos.EtiquetaResumo(e.Id, e.Nome, e.Descricao)).ToList());
 }

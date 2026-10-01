@@ -1,3 +1,4 @@
+using System.Text;
 using Microsoft.EntityFrameworkCore;
 using ProdutosApi.Data;
 using ProdutosApi.Domain;
@@ -11,20 +12,73 @@ public class ProdutoRepository : IProdutoRepository
 
     public ProdutoRepository(AppDbContext context) => _context = context;
 
+    private static IQueryable<Produto> AplicarFiltro(IQueryable<Produto> query, ProdutoFiltro filtro)
+    {
+        if (!string.IsNullOrWhiteSpace(filtro.Nome))
+        {
+            var termo = filtro.Nome.Trim();
+            query = query.Where(p => EF.Functions.Like(p.Nome, $"%{termo}%"));
+        }
+            
+        if(filtro.PrecoMinimo.HasValue)
+        {
+            query = query.Where(p => p.Preco >= filtro.PrecoMinimo.Value);
+        }
+
+        if(filtro.PrecoMaximo.HasValue)
+        {
+            query = query.Where(p => p.Preco <= filtro.PrecoMaximo.Value);
+        }
+
+        if(!string.IsNullOrWhiteSpace(filtro.Etiqueta))
+        {
+            var etiqueta = filtro.Etiqueta.Trim();
+            query = query.Where(p => p.Etiquetas.Any(e =>EF.Functions.ILike(e.Nome,etiqueta)));
+        }
+        return query;
+    }
+    
+    private static IQueryable<Produto> AplicarOrdenacao(IQueryable<Produto> query, ProdutoFiltro filtro)
+    {
+        var ordenada = filtro.OrderBy?.ToLowerInvariant() switch
+        {
+            "nome" => filtro.Desc ? query.OrderByDescending(p => p.Nome) : query.OrderBy(p => p.Nome),
+            "preco" => filtro.Desc ? query.OrderByDescending(p => p.Preco) : query.OrderBy(p => p.Preco),
+            "estoque" => filtro.Desc ? query.OrderByDescending(p => p.Estoque) : query.OrderBy(p => p.Estoque),
+            "criadoem" => filtro.Desc ? query.OrderByDescending(p => p.CriadoEm) : query.OrderBy(p => p.CriadoEm),
+            _ => filtro.Desc ? query.OrderByDescending(p => p.Id) : query.OrderBy(p => p.Id)
+        };
+      
+        return ordenada.ThenBy(p => p.Id);
+    }
+
     public async Task<PagedResult<Produto>> ListarAsync(ProdutoFiltro filtro, CancellationToken ct = default)
     {
-        IQueryable<Produto> query = _context.Produtos.AsNoTracking();
+        IQueryable<Produto> query = _context.Produtos.AsNoTracking()
+            .Include(p => p.Etiquetas)
+            .AsSplitQuery();
+        
+        query = AplicarFiltro(query, filtro);
+        
         var total = await query.CountAsync(ct);
+        
+        query = AplicarOrdenacao(query, filtro);
+        
         var itens = await query
             .Skip(filtro.Skip)
             .Take(filtro.PageSize)
             .ToListAsync(ct);
         
         return new PagedResult<Produto>(itens, filtro.Page, filtro.PageSize, total);
+        
+        
     }
+       
 
     public Task<Produto?> ObterPorIdAsync(int id, CancellationToken ct = default) =>
-        _context.Produtos.FirstOrDefaultAsync(p => p.Id == id, ct);
+        _context.Produtos
+            .Include(p => p.Etiquetas)
+            .FirstOrDefaultAsync(p => p.Id == id, ct);
 
     public Task<bool> ExisteNomeAsync(string nome, int? ignorarId = null, CancellationToken ct = default) =>
         _context.Produtos
@@ -37,4 +91,13 @@ public class ProdutoRepository : IProdutoRepository
     public void Remover(Produto produto) => _context.Produtos.Remove(produto);
 
     public Task<int> SalvarAsync(CancellationToken ct = default) => _context.SaveChangesAsync(ct);
+
+    public Task<Etiqueta?> ObterEtiquetaPorIdAsync(int etiquetaId, CancellationToken ct = default) =>
+        _context.Etiquetas.FirstOrDefaultAsync(e => e.Id == etiquetaId, ct);
+
+    public Task<bool> EtiquetaJaAssociadaAsync(int produtoId, int etiquetaId, CancellationToken ct = default) =>
+        _context.Produtos
+            .Where(p => p.Id == produtoId)
+            .SelectMany(p => p.Etiquetas)
+            .AnyAsync(e => e.Id == etiquetaId, ct);
 }

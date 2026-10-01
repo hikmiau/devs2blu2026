@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ProdutosApi.Data;
+using ProdutosApi.Middleware;
 using ProdutosApi.Repositories;
 using ProdutosApi.Services;
 
@@ -22,10 +23,14 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     }
 });
 
+
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped<IProdutoService, ProdutoService>();
+builder.Services.AddScoped<IEtiquetaRepository, EtiquetaRepository>();
+builder.Services.AddScoped<IEtiquetaService, EtiquetaService>();
 
 var app = builder.Build();
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {
@@ -37,9 +42,16 @@ app.MapControllers();
 
 using (var scope = app.Services.CreateScope())
 {
-    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    await db.Database.EnsureCreatedAsync();
-    await DbSeeder.PopularAsync(db);
+    try
+    {
+        var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+        await db.Database.EnsureCreatedAsync();
+        await DbSeeder.PopularAsync(db);
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Erro ao inicializar banco: {ex.Message}");
+    }
 }
 
 app.Run();
