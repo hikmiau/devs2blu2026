@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "services": {
+    "api": {
+      "runtime": "container",
+      "dockerfile": "Dockerfile.vercel"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api"
+    }
+  ]
+}
