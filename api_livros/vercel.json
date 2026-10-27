@@ -3,7 +3,7 @@
   "services": {
     "api": {
       "runtime": "container",
-      "dockerfile": "Dockerfile.vercel"
+      "entrypoint": "Dockerfile.vercel"
     }
   },
   "routes": [
